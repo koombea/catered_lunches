@@ -1,0 +1,23 @@
+{
+    "title": "Menus",
+    "description": "schema for Menus",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "date": {
+            "description": "date of menu",
+            "type": "string"
+        },
+          "menu": {
+            "description": "description of the menu",
+            "type": "string"
+        },
+          "day": {
+            "description": "day of the menu",
+            "type": "string"
+        }
+      },
+      "required": ["date" "name","day"]
+    }
+}

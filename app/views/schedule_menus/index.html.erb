@@ -1,0 +1,24 @@
+<header class="main-header">
+
+<div class>
+   <label >Schedule of menus from today to the date that you chose</label>
+</div>
+<p></p>
+
+  <% @menus.each do |menu|%>
+  <li>
+     <span><%= "#{menu[:date].strftime("%m-%d-%Y") }  #{menu[:menu]} "  %></span>
+  </li>
+  <% end %>
+<p></p>
+
+<%= form_tag(root_path, method: :get) do%>
+
+<%=date_field('menu_dates','end_date',value:Date.current)%>
+
+    <div >
+      <button type="submit"> Get Schedule Menu</button>
+    </div>
+<% end %>
+
+</header>

@@ -1,0 +1,2 @@
+module ScheduleMenusHelper
+end
